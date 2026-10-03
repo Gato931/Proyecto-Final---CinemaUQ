@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="co.edu.uniquindio.poo.controller.MainController"
+      alignment="CENTER" spacing="14">
+    <padding>
+        <Insets top="30" right="30" bottom="30" left="30" />
+    </padding>
+    <Label text="CinemaUQ" style="-fx-font-size: 28px; -fx-font-weight: bold;" />
+    <Label text="Entrega 1 - Analisis, diseno y patrones creacionales" />
+    <Label fx:id="lblEstado" />
+</VBox>
