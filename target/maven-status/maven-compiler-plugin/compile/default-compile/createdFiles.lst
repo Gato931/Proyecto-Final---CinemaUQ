@@ -17,10 +17,12 @@ co\edu\uniquindio\poo\model\ConsecutivoCompra$Holder.class
 co\edu\uniquindio\poo\model\excepcion\ValidacionException.class
 co\edu\uniquindio\poo\model\Usuario.class
 co\edu\uniquindio\poo\model\Asiento.class
+co\edu\uniquindio\poo\controller\MainController$4.class
 co\edu\uniquindio\poo\model\servicio\ServicioTarjetas.class
 co\edu\uniquindio\poo\model\MovimientoTarjeta.class
 co\edu\uniquindio\poo\model\DetalleProductoCompra.class
 co\edu\uniquindio\poo\model\ConsecutivoCompra.class
+co\edu\uniquindio\poo\controller\MainController$1.class
 co\edu\uniquindio\poo\model\repositorio\AlmacenCompras.class
 co\edu\uniquindio\poo\model\repositorio\BuscadorUsuarios.class
 co\edu\uniquindio\poo\model\servicio\ServicioDisponibilidadAsientos.class
@@ -32,6 +34,7 @@ co\edu\uniquindio\poo\model\repositorio\RegistroCombos.class
 co\edu\uniquindio\poo\model\servicio\ServicioFunciones.class
 co\edu\uniquindio\poo\model\repositorio\RegistroUsuarios.class
 co\edu\uniquindio\poo\model\Cliente.class
+co\edu\uniquindio\poo\controller\MainController$2.class
 co\edu\uniquindio\poo\model\CuentaPuntos.class
 co\edu\uniquindio\poo\controller\ContextoController.class
 co\edu\uniquindio\poo\model\reporte\ReporteConFirmaDecorator.class
@@ -43,6 +46,7 @@ co\edu\uniquindio\poo\model\EstadoCompra.class
 co\edu\uniquindio\poo\model\Promocion.class
 co\edu\uniquindio\poo\model\reporte\ServicioReportes.class
 co\edu\uniquindio\poo\model\repositorio\RegistroPromociones.class
+co\edu\uniquindio\poo\controller\MainController$3.class
 co\edu\uniquindio\poo\model\DetalleCombo.class
 co\edu\uniquindio\poo\model\repositorio\RegistroCompras.class
 co\edu\uniquindio\poo\model\servicio\ServicioRegistroUsuarios.class
