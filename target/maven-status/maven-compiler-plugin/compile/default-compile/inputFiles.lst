@@ -2,6 +2,7 @@ C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\c
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\excepcion\AsientoNoDisponibleException.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\Cliente.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\EstadoCompra.java
+C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\reporte\ReportePdfAdapter.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\app\CinemaUQApp.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\Funcion.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\servicio\ServicioRegistroUsuarios.java
@@ -31,11 +32,13 @@ C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\c
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\Sala.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\TipoMovimientoTarjeta.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\controller\ContextoController.java
+C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\reporte\LibreriaPdfExterna.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\AcumulacionPuntos.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\MovimientoTarjeta.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\servicio\ServicioDisponibilidadAsientos.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\excepcion\DominioException.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\DetalleCombo.java
+C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\reporte\ExportadorReporte.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\controller\MainController.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\Asiento.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\EstadoFuncion.java
@@ -51,6 +54,8 @@ C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\c
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\Combo.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\ElementoConfiteria.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\repositorio\RegistradorUsuarios.java
+C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\reporte\ServicioReportes.java
+C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\app\PruebaAdapter.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\DetalleComboCompra.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\repositorio\RegistroCompras.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\servicio\ServicioFunciones.java

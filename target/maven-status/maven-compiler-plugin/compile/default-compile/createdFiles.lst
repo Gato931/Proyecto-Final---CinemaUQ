@@ -24,6 +24,7 @@ co\edu\uniquindio\poo\model\repositorio\BuscadorUsuarios.class
 co\edu\uniquindio\poo\model\servicio\ServicioDisponibilidadAsientos.class
 co\edu\uniquindio\poo\model\excepcion\AsientoNoDisponibleException.class
 co\edu\uniquindio\poo\model\Administrador.class
+co\edu\uniquindio\poo\model\reporte\LibreriaPdfExterna.class
 co\edu\uniquindio\poo\app\MainConsola.class
 co\edu\uniquindio\poo\model\repositorio\RegistroCombos.class
 co\edu\uniquindio\poo\model\servicio\ServicioFunciones.class
@@ -37,6 +38,7 @@ co\edu\uniquindio\poo\model\TipoMovimientoTarjeta.class
 co\edu\uniquindio\poo\model\Pelicula.class
 co\edu\uniquindio\poo\model\EstadoCompra.class
 co\edu\uniquindio\poo\model\Promocion.class
+co\edu\uniquindio\poo\model\reporte\ServicioReportes.class
 co\edu\uniquindio\poo\model\repositorio\RegistroPromociones.class
 co\edu\uniquindio\poo\model\DetalleCombo.class
 co\edu\uniquindio\poo\model\repositorio\RegistroCompras.class
@@ -45,6 +47,7 @@ co\edu\uniquindio\poo\model\Compra.class
 co\edu\uniquindio\poo\model\repositorio\RegistradorUsuarios.class
 co\edu\uniquindio\poo\model\EstadoFuncion.class
 co\edu\uniquindio\poo\model\TarjetaVirtual.class
+co\edu\uniquindio\poo\app\PruebaAdapter.class
 co\edu\uniquindio\poo\model\ElementoConfiteria.class
 co\edu\uniquindio\poo\model\servicio\ServicioPuntos.class
 co\edu\uniquindio\poo\model\DetalleComboCompra.class
@@ -52,7 +55,9 @@ co\edu\uniquindio\poo\model\excepcion\DominioException.class
 co\edu\uniquindio\poo\model\servicio\ServicioAutenticacion.class
 co\edu\uniquindio\poo\model\repositorio\RegistroSalas.class
 co\edu\uniquindio\poo\model\Combo.class
+co\edu\uniquindio\poo\model\reporte\ExportadorReporte.class
 co\edu\uniquindio\poo\model\repositorio\RegistroPeliculas.class
+co\edu\uniquindio\poo\model\reporte\ReportePdfAdapter.class
 co\edu\uniquindio\poo\model\servicio\CalculadorPuntosEstandar.class
 co\edu\uniquindio\poo\model\Compra$Builder.class
 co\edu\uniquindio\poo\model\servicio\GestorTarjetas.class
