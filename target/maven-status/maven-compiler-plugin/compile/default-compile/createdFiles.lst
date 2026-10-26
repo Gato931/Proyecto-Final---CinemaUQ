@@ -3,6 +3,7 @@ co\edu\uniquindio\poo\app\CinemaUQApp.class
 co\edu\uniquindio\poo\model\excepcion\SaldoInsuficienteException.class
 co\edu\uniquindio\poo\model\Funcion.class
 co\edu\uniquindio\poo\controller\MainController.class
+co\edu\uniquindio\poo\model\reporte\ReporteConFechaDecorator.class
 co\edu\uniquindio\poo\model\AcumulacionPuntos.class
 co\edu\uniquindio\poo\model\servicio\CalculadorPuntos.class
 co\edu\uniquindio\poo\model\repositorio\RegistroFunciones.class
@@ -11,6 +12,7 @@ co\edu\uniquindio\poo\model\repositorio\RegistroProductos.class
 co\edu\uniquindio\poo\model\Producto.class
 co\edu\uniquindio\poo\model\Sala.class
 co\edu\uniquindio\poo\app\ContextoApp.class
+co\edu\uniquindio\poo\app\PruebaDecorator.class
 co\edu\uniquindio\poo\model\ConsecutivoCompra$Holder.class
 co\edu\uniquindio\poo\model\excepcion\ValidacionException.class
 co\edu\uniquindio\poo\model\Usuario.class
@@ -32,6 +34,7 @@ co\edu\uniquindio\poo\model\repositorio\RegistroUsuarios.class
 co\edu\uniquindio\poo\model\Cliente.class
 co\edu\uniquindio\poo\model\CuentaPuntos.class
 co\edu\uniquindio\poo\controller\ContextoController.class
+co\edu\uniquindio\poo\model\reporte\ReporteConFirmaDecorator.class
 module-info.class
 co\edu\uniquindio\poo\model\servicio\ServicioCompras.class
 co\edu\uniquindio\poo\model\TipoMovimientoTarjeta.class
@@ -53,6 +56,7 @@ co\edu\uniquindio\poo\model\servicio\ServicioPuntos.class
 co\edu\uniquindio\poo\model\DetalleComboCompra.class
 co\edu\uniquindio\poo\model\excepcion\DominioException.class
 co\edu\uniquindio\poo\model\servicio\ServicioAutenticacion.class
+co\edu\uniquindio\poo\model\reporte\ExportadorReporteDecorator.class
 co\edu\uniquindio\poo\model\repositorio\RegistroSalas.class
 co\edu\uniquindio\poo\model\Combo.class
 co\edu\uniquindio\poo\model\reporte\ExportadorReporte.class
