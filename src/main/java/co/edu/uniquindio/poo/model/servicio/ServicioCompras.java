@@ -9,6 +9,9 @@ import co.edu.uniquindio.poo.model.EstadoFuncion;
 import co.edu.uniquindio.poo.model.excepcion.AsientoNoDisponibleException;
 import co.edu.uniquindio.poo.model.excepcion.ValidacionException;
 import co.edu.uniquindio.poo.model.repositorio.AlmacenCompras;
+import co.edu.uniquindio.poo.model.Producto;
+import java.util.HashMap;
+import java.util.Map;
 import java.time.LocalDate;
 
 public class ServicioCompras {
@@ -60,37 +63,51 @@ public class ServicioCompras {
     }
 
     private void validarConfiteria(Compra compra) {
-        for (DetalleProductoCompra detalle : compra.getProductos()) {
-            if (!detalle.getProducto().isActivo()) {
-                throw new ValidacionException("Producto inactivo: " + detalle.getProducto().getNombre());
-            }
-            validarStockTotal(detalle.getProducto(), compra);
-        }
-        for (DetalleComboCompra detalleComboCompra : compra.getCombos()) {
-            if (!detalleComboCompra.getCombo().isActivo()) {
-                throw new ValidacionException("Combo inactivo: " + detalleComboCompra.getCombo().getNombre());
-            }
-            for (co.edu.uniquindio.poo.model.DetalleCombo detalleCombo : detalleComboCompra.getCombo().getProductos()) {
-                validarStockTotal(detalleCombo.getProducto(), compra);
-            }
-        }
-    }
 
-    private void validarStockTotal(co.edu.uniquindio.poo.model.Producto producto, Compra compra) {
-        int cantidadNecesaria = 0;
+        Map<Producto, Integer> necesidades = new HashMap<>();
+
         for (DetalleProductoCompra detalle : compra.getProductos()) {
-            if (detalle.getProducto() == producto)
-                cantidadNecesaria += detalle.getCantidad();
+
+            detalle.getProducto()
+                    .acumularStockNecesario(
+                            necesidades,
+                            detalle.getCantidad());
         }
-        for (DetalleComboCompra detalleCompra : compra.getCombos()) {
-            for (co.edu.uniquindio.poo.model.DetalleCombo detalleCombo : detalleCompra.getCombo().getProductos()) {
-                if (detalleCombo.getProducto() == producto) {
-                    cantidadNecesaria += detalleCombo.getCantidad() * detalleCompra.getCantidad();
-                }
+
+        for (DetalleComboCompra detalle : compra.getCombos()) {
+
+            if (!detalle.getCombo().isActivo()) {
+
+                throw new ValidacionException(
+                        "Combo inactivo: "
+                                + detalle.getCombo()
+                                        .getNombre());
             }
+
+            detalle.getCombo()
+                    .acumularStockNecesario(
+                            necesidades,
+                            detalle.getCantidad());
         }
-        if (!producto.tieneStock(cantidadNecesaria)) {
-            throw new ValidacionException("Stock insuficiente para " + producto.getNombre());
+
+        for (Map.Entry<Producto, Integer> necesidad : necesidades.entrySet()) {
+
+            Producto producto = necesidad.getKey();
+            int cantidad = necesidad.getValue();
+
+            if (!producto.isActivo()) {
+
+                throw new ValidacionException(
+                        "Producto inactivo: "
+                                + producto.getNombre());
+            }
+
+            if (!producto.tieneStock(cantidad)) {
+
+                throw new ValidacionException(
+                        "Stock insuficiente para "
+                                + producto.getNombre());
+            }
         }
     }
 

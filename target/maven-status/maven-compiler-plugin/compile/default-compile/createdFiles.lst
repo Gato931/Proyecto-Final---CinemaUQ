@@ -44,6 +44,7 @@ co\edu\uniquindio\poo\model\Compra.class
 co\edu\uniquindio\poo\model\repositorio\RegistradorUsuarios.class
 co\edu\uniquindio\poo\model\EstadoFuncion.class
 co\edu\uniquindio\poo\model\TarjetaVirtual.class
+co\edu\uniquindio\poo\model\ElementoConfiteria.class
 co\edu\uniquindio\poo\model\servicio\ServicioPuntos.class
 co\edu\uniquindio\poo\model\DetalleComboCompra.class
 co\edu\uniquindio\poo\model\excepcion\DominioException.class

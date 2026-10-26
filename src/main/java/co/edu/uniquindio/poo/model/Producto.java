@@ -1,8 +1,9 @@
 package co.edu.uniquindio.poo.model;
 
+import java.util.Map;
 import co.edu.uniquindio.poo.model.excepcion.ValidacionException;
 
-public class Producto {
+public class Producto implements ElementoConfiteria {
     private final String codigo;
     private String nombre;
     private double precio;
@@ -23,10 +24,12 @@ public class Producto {
         this.activo = true;
     }
 
+    @Override
     public boolean tieneStock(int cantidad) {
         return cantidad > 0 && stock >= cantidad;
     }
 
+    @Override
     public void descontarStock(int cantidad) {
         if (!tieneStock(cantidad)) {
             throw new ValidacionException("Cantidad no disponible para " + nombre);
@@ -44,6 +47,7 @@ public class Producto {
         return codigo;
     }
 
+    @Override
     public String getNombre() {
         return nombre;
     }
@@ -52,6 +56,7 @@ public class Producto {
         this.nombre = nombre;
     }
 
+    @Override
     public double getPrecio() {
         return precio;
     }
@@ -66,11 +71,23 @@ public class Producto {
         return stock;
     }
 
+    @Override
     public boolean isActivo() {
         return activo;
     }
 
     public void setActivo(boolean activo) {
         this.activo = activo;
+    }
+
+    @Override
+    public void acumularStockNecesario(
+            Map<Producto, Integer> necesidades,
+            int cantidad) {
+
+        necesidades.merge(
+                this,
+                cantidad,
+                Integer::sum);
     }
 }

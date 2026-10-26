@@ -3,19 +3,22 @@ package co.edu.uniquindio.poo.model;
 import co.edu.uniquindio.poo.model.excepcion.ValidacionException;
 
 public class DetalleCombo {
-    private final Producto producto;
+
+    private final ElementoConfiteria elemento;
     private final int cantidad;
 
-    public DetalleCombo(Producto producto, int cantidad) {
-        if (producto == null || cantidad <= 0) {
-            throw new ValidacionException("Producto y cantidad del combo son obligatorios");
+    public DetalleCombo(ElementoConfiteria elemento, int cantidad) {
+        if (elemento == null || cantidad <= 0) {
+            throw new ValidacionException(
+                    "Elemento y cantidad del combo son obligatorios");
         }
-        this.producto = producto;
+
+        this.elemento = elemento;
         this.cantidad = cantidad;
     }
 
-    public Producto getProducto() {
-        return producto;
+    public ElementoConfiteria getElemento() {
+        return elemento;
     }
 
     public int getCantidad() {
