@@ -6,6 +6,7 @@ co\edu\uniquindio\poo\controller\MainController.class
 co\edu\uniquindio\poo\model\AcumulacionPuntos.class
 co\edu\uniquindio\poo\model\servicio\CalculadorPuntos.class
 co\edu\uniquindio\poo\model\repositorio\RegistroFunciones.class
+co\edu\uniquindio\poo\model\servicio\ServicioTarjetasProxy.class
 co\edu\uniquindio\poo\model\repositorio\RegistroProductos.class
 co\edu\uniquindio\poo\model\Producto.class
 co\edu\uniquindio\poo\model\Sala.class
@@ -54,4 +55,5 @@ co\edu\uniquindio\poo\model\Combo.class
 co\edu\uniquindio\poo\model\repositorio\RegistroPeliculas.class
 co\edu\uniquindio\poo\model\servicio\CalculadorPuntosEstandar.class
 co\edu\uniquindio\poo\model\Compra$Builder.class
+co\edu\uniquindio\poo\model\servicio\GestorTarjetas.class
 co\edu\uniquindio\poo\model\servicio\ServicioCartelera.class

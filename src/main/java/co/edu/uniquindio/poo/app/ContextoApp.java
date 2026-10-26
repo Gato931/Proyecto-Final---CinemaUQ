@@ -10,6 +10,7 @@ import co.edu.uniquindio.poo.model.repositorio.RegistroPromociones;
 import co.edu.uniquindio.poo.model.repositorio.RegistroSalas;
 import co.edu.uniquindio.poo.model.repositorio.RegistroUsuarios;
 import co.edu.uniquindio.poo.model.servicio.CalculadorPuntosEstandar;
+import co.edu.uniquindio.poo.model.servicio.GestorTarjetas;
 import co.edu.uniquindio.poo.model.servicio.ServicioAutenticacion;
 import co.edu.uniquindio.poo.model.servicio.ServicioCartelera;
 import co.edu.uniquindio.poo.model.servicio.ServicioCompras;
@@ -18,37 +19,64 @@ import co.edu.uniquindio.poo.model.servicio.ServicioFunciones;
 import co.edu.uniquindio.poo.model.servicio.ServicioPuntos;
 import co.edu.uniquindio.poo.model.servicio.ServicioRegistroUsuarios;
 import co.edu.uniquindio.poo.model.servicio.ServicioTarjetas;
+import co.edu.uniquindio.poo.model.servicio.ServicioTarjetasProxy;
 
 public class ContextoApp {
+
     private final ConsecutivoCompra consecutivoCompra;
 
     private final RegistroUsuarios registroUsuarios = new RegistroUsuarios();
+
     private final RegistroCompras registroCompras = new RegistroCompras();
+
     private final RegistroPeliculas registroPeliculas = new RegistroPeliculas();
+
     private final RegistroSalas registroSalas = new RegistroSalas();
+
     private final RegistroFunciones registroFunciones = new RegistroFunciones();
+
     private final RegistroProductos registroProductos = new RegistroProductos();
+
     private final RegistroCombos registroCombos = new RegistroCombos();
+
     private final RegistroPromociones registroPromociones = new RegistroPromociones();
 
     private final ServicioRegistroUsuarios servicioRegistroUsuarios;
     private final ServicioAutenticacion servicioAutenticacion;
     private final ServicioCompras servicioCompras;
-    private final ServicioTarjetas servicioTarjetas;
+    private final GestorTarjetas servicioTarjetas;
     private final ServicioFunciones servicioFunciones;
     private final ServicioCartelera servicioCartelera;
     private final ServicioDisponibilidadAsientos servicioDisponibilidadAsientos;
     private final ServicioPuntos servicioPuntos;
 
-    public ContextoApp(ConsecutivoCompra consecutivoCompra) {
+    public ContextoApp(
+            ConsecutivoCompra consecutivoCompra) {
+
         this.consecutivoCompra = consecutivoCompra;
-        servicioRegistroUsuarios = new ServicioRegistroUsuarios(registroUsuarios);
-        servicioAutenticacion = new ServicioAutenticacion(registroUsuarios);
-        servicioCompras = new ServicioCompras(registroCompras, new CalculadorPuntosEstandar());
-        servicioTarjetas = new ServicioTarjetas();
-        servicioFunciones = new ServicioFunciones(registroFunciones);
-        servicioCartelera = new ServicioCartelera(registroPeliculas, registroFunciones);
+
+        servicioRegistroUsuarios = new ServicioRegistroUsuarios(
+                registroUsuarios);
+
+        servicioAutenticacion = new ServicioAutenticacion(
+                registroUsuarios);
+
+        servicioCompras = new ServicioCompras(
+                registroCompras,
+                new CalculadorPuntosEstandar());
+
+        servicioTarjetas = new ServicioTarjetasProxy(
+                new ServicioTarjetas());
+
+        servicioFunciones = new ServicioFunciones(
+                registroFunciones);
+
+        servicioCartelera = new ServicioCartelera(
+                registroPeliculas,
+                registroFunciones);
+
         servicioDisponibilidadAsientos = new ServicioDisponibilidadAsientos();
+
         servicioPuntos = new ServicioPuntos();
     }
 
@@ -100,7 +128,7 @@ public class ContextoApp {
         return servicioCompras;
     }
 
-    public ServicioTarjetas getServicioTarjetas() {
+    public GestorTarjetas getServicioTarjetas() {
         return servicioTarjetas;
     }
 
@@ -113,6 +141,7 @@ public class ContextoApp {
     }
 
     public ServicioDisponibilidadAsientos getServicioDisponibilidadAsientos() {
+
         return servicioDisponibilidadAsientos;
     }
 

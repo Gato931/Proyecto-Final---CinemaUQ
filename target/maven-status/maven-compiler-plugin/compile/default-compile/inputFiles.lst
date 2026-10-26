@@ -6,6 +6,7 @@ C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\c
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\Funcion.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\servicio\ServicioRegistroUsuarios.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\repositorio\AlmacenCompras.java
+C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\servicio\GestorTarjetas.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\repositorio\RegistroCombos.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\repositorio\RegistroSalas.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\Compra.java
@@ -39,6 +40,7 @@ C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\c
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\Asiento.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\EstadoFuncion.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\app\ContextoApp.java
+C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\servicio\ServicioTarjetasProxy.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\repositorio\RegistroFunciones.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\servicio\ServicioPuntos.java
 C:\Users\FRED\Documents\Programacion_2\Proyecto Final - CinemaUQ\src\main\java\co\edu\uniquindio\poo\model\servicio\ServicioTarjetas.java
